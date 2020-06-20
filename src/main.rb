@@ -1,3 +1,5 @@
 load 'compiler.rb'
 
-compile('README.md')
+ARGV.each do|a|
+  compile(a)
+end
