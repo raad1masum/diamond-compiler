@@ -1,2 +1,2 @@
 # diamond-compiler
-A markdown to HTML compiler.
+💎 A markdown to HTML compiler.
