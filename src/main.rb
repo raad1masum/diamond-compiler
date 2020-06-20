@@ -1,1 +1,3 @@
-puts "Diamond Compiler"
+load 'compiler.rb'
+
+compile('README.md')
