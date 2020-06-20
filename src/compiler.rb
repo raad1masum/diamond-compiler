@@ -9,9 +9,7 @@ md_options = {
 
 processor = Redcarpet::Markdown.new(Redcarpet::Render::HTML, md_options)
 
-print "Enter file to compile: "
-file = gets.chomp
-
-markdown = File.read(file.to_str)
-
-puts processor.render(markdown)
+def compile (file_name)
+  markdown = File.read(file_name.to_str)
+  puts processor.render(markdown)
+end
