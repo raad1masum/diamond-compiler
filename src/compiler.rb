@@ -1,6 +1,9 @@
 require 'redcarpet'
 
-markdown = File.read('README.md')
+print "Enter file to compile: "
+file = gets.chomp
+
+markdown = File.read(file.to_str)
 
 md_options = {
   tables: true,
