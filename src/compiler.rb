@@ -11,5 +11,9 @@ def compile (file_name)
   processor = Redcarpet::Markdown.new(Redcarpet::Render::HTML, md_options)
 
   markdown = File.read(file_name.to_str)
-  puts processor.render(markdown)
+  output = processor.render(markdown)
+
+  out_file = File.new("index.html", "w")
+  out_file.puts(output)
+  out_file.close
 end
