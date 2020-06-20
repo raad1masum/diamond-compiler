@@ -1,10 +1,5 @@
 require 'redcarpet'
 
-print "Enter file to compile: "
-file = gets.chomp
-
-markdown = File.read(file.to_str)
-
 md_options = {
   tables: true,
   fenced_code_blocks: true,
@@ -13,5 +8,10 @@ md_options = {
 }
 
 processor = Redcarpet::Markdown.new(Redcarpet::Render::HTML, md_options)
+
+print "Enter file to compile: "
+file = gets.chomp
+
+markdown = File.read(file.to_str)
 
 puts processor.render(markdown)
