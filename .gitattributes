@@ -1,2 +1,4 @@
 *.html linguist-detectable=false
 eval/index.html linguist-detectable=false
+*.md linguist-detectable=true
+*.md linguist-documentation=false
